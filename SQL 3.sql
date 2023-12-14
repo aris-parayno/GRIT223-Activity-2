@@ -1,0 +1,2 @@
+-- Populate AircraftParts table
+INSERT INTO AircraftParts (AircraftID, PartID, Quantity) SELECT abs(random()) % 5 + 1, abs(random()) % 5 + 1, abs(random()) % 10 + 1 FROM (SELECT 1 + abs(random()) % 10 AS x);
